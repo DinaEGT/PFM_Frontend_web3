@@ -1,13 +1,11 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { AppLayout } from "./components/Ui/Layout";
 
 function App() {
   return (
-    <>
-    <Header/>
-    <h1 className="text-3xl font-bold underline">BM_Proyect</h1>
-    <Footer/>
-    </>
+    <AppLayout>
+    <h1 className="text-3xl font-bold underline">BM PROYECTO</h1>
+    </AppLayout>
+    
   )
 }
 
