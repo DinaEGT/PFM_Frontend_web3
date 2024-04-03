@@ -1,10 +1,11 @@
 import { AppLayout } from "./components/Ui/Layout";
+import { Home } from './pages';
 
 function App() {
   return (
     <AppLayout>
-    <h1 className="text-3xl font-bold underline">BM PROYECTO</h1>
-    </AppLayout>
+      <Home />
+    </AppLayout>   
     
   )
 }
