@@ -1,9 +1,7 @@
 export default function Footer() {
     return (
-
-        <footer className="border-t py-4 px-3 flex justify-center bg-white shadow-xs">
-            <p>Todos los Derechos Reservados &copy; {new Data().getFullYear()} 
-            Dina E. Guitz Torres </p>
-        </footer>
+      <footer className="py-4 px-3 sm:p-8 flex justify-center bg-white border-t shadow-xs">
+        <p>Derechos de autor &copy; {new Date().getFullYear()} BM_Proyect</p>
+      </footer>
     )
-}
+  }
