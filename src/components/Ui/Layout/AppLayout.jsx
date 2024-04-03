@@ -1,16 +1,18 @@
-import {Header, Footer} from '../../index'
 import PropTypes from 'prop-types'
+import React from 'react'
+import Footer from '../../Footer'
+import Header from '../../Header'
 
-export default function AppLayout({ children }){
-    return(
-        <>
-        <Header/>
-        <main className='min-h-[85vh]'>{children}</main>
-        <Footer/>
-        </>
-    )
+export default function AppLayout({ children }) {
+  return (
+    <React.Fragment>
+      <Header />
+      <main className="mx-auto min-h-[85vh]">{children}</main>
+      <Footer />
+    </React.Fragment>
+  )
 }
 
-AppLayout.PropTypes = {
-    children: PropTypes.node.isRequired
+AppLayout.propTypes = {
+  children: PropTypes.node.isRequired
 }
